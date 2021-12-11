@@ -1,6 +1,5 @@
-import "./styles.css";
-
 let code;
+let interval;
 const START_TIME = 60;
 const MESSAGE_GAME_OVER = "Game over";
 const MESSAGE_GAME_WIN = "You win";
@@ -68,8 +67,6 @@ function showResult(result) {
 }
 
 // timer
-
-let interval;
 
 function startTimer() {
   function downSeconds() {
