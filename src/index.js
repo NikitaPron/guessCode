@@ -10,7 +10,6 @@ function startGame() {
   createNumbersCells(countOfNumbers);
   clearInterval(interval);
   cleanNums();
-  setActive(0);
   resetTimer();
   code = generateCode(countOfNumbers);
   startTimer();
@@ -33,6 +32,8 @@ function cleanNums() {
     num.classList.remove("rightNum");
     num.classList.remove("wrongNum");
   });
+
+  setActive(0);
 }
 
 function checkAnswer(arr) {
